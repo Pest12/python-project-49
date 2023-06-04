@@ -13,8 +13,7 @@ def brain_even():
     while i <= 3:
         random_number = randint(1, 100)
         print(f'Question: {random_number}')
-        print('Your answer: ', end = '')
-        answer = input()
+        answer = prompt.string('Your answer: ')
         if (answer == 'yes' and random_number % 2 == 0) or (answer == 'no' and random_number % 2 != 0):
             print('Correct!')
         elif answer != 'no' and random_number % 2 != 0:
