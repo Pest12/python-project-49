@@ -14,4 +14,3 @@ def game_data():
             num_2 = num_2 - num_1
     current_answer = str(num_2)
     return math_question, current_answer
-
