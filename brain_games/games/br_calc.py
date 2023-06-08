@@ -1,7 +1,7 @@
 from random import randint, choice
-import operator
 
 game_rules = 'What is result of the expression?'
+
 
 def game_data():
     operator = ["-", "+", "*"]
@@ -11,5 +11,3 @@ def game_data():
     math_question = f'{num_1} {oper} {num_2}'
     current_answer = str(eval(math_question))
     return math_question, current_answer
-
-
