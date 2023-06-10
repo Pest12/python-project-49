@@ -12,5 +12,5 @@ def game_data():
             num_1 = num_1 - num_2
         else:
             num_2 = num_2 - num_1
-    current_answer = str(num_2)
-    return math_question, current_answer
+    correct_answer = str(num_2)
+    return math_question, correct_answer
