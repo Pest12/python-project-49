@@ -1,5 +1,5 @@
 .venv/
 dist/
-__pyache__/
+__pycache__/
 
 
