@@ -8,7 +8,9 @@ def game_data():
     start_of_progression = random.randint(1, 20)
     end_of_progression = random.randint(70, 100)
     progression_step = random.randint(1, 5)
-    for numbers in range(start_of_progression, end_of_progression, progression_step):
+    for numbers in range(start_of_progression,
+                         end_of_progression,
+                         progression_step):
         progression.append(numbers)
     progression_length = slice(random.randint(5, 10))
     progression_list = progression[progression_length]

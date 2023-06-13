@@ -15,7 +15,8 @@ def start_game(game):
         if user_answer == correct_answer:
             print('Correct!')
         else:
-            print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
+            print(f"'{user_answer}' is wrong answer ;(."
+                  f" Correct answer was '{correct_answer}'.")
             return print(f"Let's try again, {name}!")
         current_round += 1
     return print(f"Congratulations, {name}!")
