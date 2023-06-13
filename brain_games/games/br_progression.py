@@ -15,5 +15,5 @@ def game_data():
     hidden_number = random.choice(progression_list)
     correct_answer = str(hidden_number)
     math_question = " ".join(map(str, progression_list))
-    math_question = math_question.replace(str(hidden_number), '..')
+    math_question = math_question.replace(correct_answer, '..', 1)
     return math_question, correct_answer
