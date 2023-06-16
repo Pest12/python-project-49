@@ -4,11 +4,9 @@ import math
 GAME_RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def is_prime(random_number):
-    random_number_sqrt = int(math.sqrt(random_number))
-    divisors = range(2, (random_number_sqrt + 1))
-    for numbers in divisors:
-        if random_number % numbers == 0:
+def is_prime(number):
+    for numbers in range(2, (int(math.sqrt(number)) + 1)):
+        if number % numbers == 0:
             return False
     return True
 
