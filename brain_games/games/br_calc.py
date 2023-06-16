@@ -9,5 +9,10 @@ def game_data():
     num_1 = randint(0, 30)
     num_2 = randint(0, 30)
     math_question = f'{num_1} {oper} {num_2}'
-    correct_answer = str(eval(math_question))
+    if oper == "-":
+        correct_answer = str(num_1 - num_2)
+    elif oper == "+":
+        correct_answer = str(num_1 + num_2)
+    else:
+        correct_answer = str(num_1 * num_2)
     return math_question, correct_answer
