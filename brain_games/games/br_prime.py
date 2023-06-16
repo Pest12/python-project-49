@@ -5,8 +5,8 @@ GAME_RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def is_prime(number):
-    for numbers in range(2, (int(math.sqrt(number)) + 1)):
-        if number % numbers == 0:
+    for divisors in range(2, (int(math.sqrt(number)) + 1)):
+        if number % divisors == 0:
             return False
     return True
 
