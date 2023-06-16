@@ -1,21 +1,26 @@
-import random
+from random import randint
 
 GAME_RULES = 'What number is missing in the progression?'
 
 
-def game_data():
+def generate_progression():
     progression = []
-    start_of_progression = random.randint(1, 20)
-    end_of_progression = random.randint(70, 100)
-    progression_step = random.randint(1, 5)
+    start_of_progression = randint(1, 20)
+    end_of_progression = randint(70, 100)
+    progression_step = randint(1, 5)
     for numbers in range(start_of_progression,
                          end_of_progression,
                          progression_step):
         progression.append(numbers)
-    progression_length = slice(random.randint(5, 10))
+    progression_length = slice(randint(5, 10))
     progression_list = progression[progression_length]
-    hidden_number = random.choice(progression_list)
-    correct_answer = str(hidden_number)
-    math_question = " ".join(map(str, progression_list))
-    math_question = math_question.replace(correct_answer, '..', 1)
-    return math_question, correct_answer
+    return progression_list
+
+
+def game_data():
+    progression = generate_progression()
+    hidden_number = randint(0, len(progression) - 1)
+    correct_answer = progression[hidden_number]
+    progression[hidden_number] = '..'
+    math_question = " ".join(map(str, progression))
+    return math_question, str(correct_answer)
