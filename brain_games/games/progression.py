@@ -13,8 +13,8 @@ def generate_progression():
                          progression_step):
         progression.append(numbers)
     progression_length = slice(randint(5, 10))
-    progression_list = progression[progression_length]
-    return progression_list
+    edited_progression = progression[progression_length]
+    return edited_progression
 
 
 def game_data():
