@@ -13,6 +13,6 @@ def game_data():
         correct_answer = str(num_1 - num_2)
     elif oper == "+":
         correct_answer = str(num_1 + num_2)
-    else:
+    elif oper == "*":
         correct_answer = str(num_1 * num_2)
     return math_question, correct_answer
