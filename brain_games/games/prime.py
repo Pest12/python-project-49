@@ -7,8 +7,8 @@ GAME_RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 def is_prime(number):
     if number <= 1:
         return False
-    for divisors in range(2, (int(math.sqrt(number)) + 1)):
-        if number % divisors == 0:
+    for _ in range(2, (int(math.sqrt(number)) + 1)):
+        if number % _ == 0:
             return False
     return True
 
