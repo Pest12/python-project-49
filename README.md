@@ -17,11 +17,11 @@ Brain Games is a set of five console games based on popular mobile brain trainin
 
 Clone the repository and use this commands:
 
-'''
+```
 make install
 make build
 make package-install
-'''
+```
 
 ## Games
 
@@ -30,7 +30,7 @@ make package-install
 
 Determining an even number
 
-'brain-even'
+`brain-even`
 
 [![asciicast](https://asciinema.org/a/589525.svg)](https://asciinema.org/a/589525)
 
@@ -38,7 +38,7 @@ Determining an even number
 
 Сalculate math expression
 
-'brain-calc'
+`brain-calc`
 
 [![asciicast](https://asciinema.org/a/591189.svg)](https://asciinema.org/a/591189)
 
@@ -46,22 +46,22 @@ Determining an even number
 
 Сalculate the greatest common divisor of two numbers
 
-'brain-gcd'
+`brain-gcd`
 
 [![asciicast](https://asciinema.org/a/591191.svg)](https://asciinema.org/a/591191)
 
-## Brain Progression
+### Brain Progression
 
 Find missing number in progression
 
-'brain-progression'
+`brain-progression`
 
 [![asciicast](https://asciinema.org/a/591192.svg)](https://asciinema.org/a/591192)
 
-## Brain Prime
+### Brain Prime
 
 Definition of a prime number
 
-'brain-prime'
+`brain-prime`
 
 [![asciicast](https://asciinema.org/a/591195.svg)](https://asciinema.org/a/591195)
